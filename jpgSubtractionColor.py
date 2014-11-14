@@ -6,4 +6,4 @@ after = misc.imread('after.JPG',flatten=0)
 
 subtracted = np.subtract(before,after)
 
-misc.imsave('subtracted.jpg',subtracted)
+misc.imsave('subtractedColor.jpg',subtracted)
