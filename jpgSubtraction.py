@@ -5,12 +5,16 @@
 
 from scipy import misc
 import numpy as np
+import sys
 
-# Get the files
-print("Enter first file name")
-beforeFile = input()
-print("Enter second file name")
-afterFile = input()
+if len(sys.argv) > 1:
+    # Get the files from the system command line arguments
+    beforeFile = sys.argv[1]
+    afterFile = sys.argv[2]
+else:
+    # Get the files with user input
+    beforeFile = input("Enter first file name: ")
+    afterFile = input("Enter second file name: ")
 
 
 # Read files in
